@@ -206,3 +206,46 @@ function exe7 (){
         }
     }
 }
+
+function exe8 (){
+    let idade, peso, altura, olhos, cabelo
+    let item1 = 0, item2 = 0, item2Qtde = 0, item3 = 0, item4 = 0
+    for(i = 1; i <= 6; i++){
+        do{
+            idade = Number(prompt(`Informe idade > 0: `))
+        }
+        while(idade < 0)
+        do{
+            peso = Number(prompt(`Informe peso > 0: `))
+        }
+        while(peso < 0)
+        do{
+            altura = Number(prompt(`Informe altura > 0: `))
+        }
+        while(altura < 0.0)
+        do{
+            olhos = prompt(`Informe a cor dos olhos (A, P, V, C): `).toUpperCase()
+        }
+        while(olhos != "A" && olhos != "P" && olhos != "V" && olhos != "C")
+            do{
+            cabelo = prompt(`Informe a cor do cabelo (P, C, L, R): `).toUpperCase()
+        }
+        while(cabelo != "P" && cabelo != "C" && cabelo != "L" && cabelo != "R")
+            // item1 idade > 50 e peso inferior < 60
+        if (idade > 50  && peso < 60){
+            item1++
+        }
+        if (altura < 1.50){
+            item2 = item2 + idade
+            item2Qtde++
+        }
+        if (olhos == 'A'){
+            item3++
+        }
+        if (cabelos = 'R' && olhos != 'A'){
+            item4++
+        }
+    }
+    alert(`Item 1 ${item1}, Item 2 ${item2 / item2Qtde}, Item 3 ${item3/6*100}, Item 4 ${item4}`)
+}
+
