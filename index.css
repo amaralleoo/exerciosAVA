@@ -1,0 +1,16 @@
+#menu {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#menu p {
+   text-align: center;
+   padding: 10px;
+}
+body {
+    background-color: rgb(58, 53, 58);
+}
+button {
+    margin: 5px;
+}
